@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="component.css" rel="stylesheet">
+</head>
+<body>
+    <img src="background.jpg" style="position:absolute; top:0px; left:0px; height:100%; width:100%;">
+    
+    <img id="pic" src="logo.png" style="position:absolute; top:0px; left:0px; height:100%; width:100%; z-index:0; opacity:1;"></img>
+    <div class = "cl-effect-21">
+    <a style="position: absolute; top:10%; left:42%; "onmouseover="events()" onmouseout="reset()">EVENTS</a>
+    <a style="position: absolute; top:80%; left:42%; "onmouseover="" onmouseout="reset()">ABOUT US</a>
+    <a style="position: absolute; top:55%; left:22%; "onmouseover="contact()" onmouseout="reset()">CONTACT</a>
+    <a style="position: absolute; top:30%; left:22%; "onmouseover="" onmouseout="reset()">SHOWS</a>
+    <a style="position: absolute; top:30%; left:62%; "onmouseover="spons()" onmouseout="reset()">SPONSORS</a>
+    <a style="position: absolute; top:55%; left:62%; "onmouseover="lectures()" onmouseout="reset()">LECTURES</a>
+    </div>
+
+    <script type="text/javascript">
+    	var mypic=document.getElementById("pic")
+    	function events(){
+    		
+    		mypic.src="events.png"
+    	}
+    	function contact(){
+    		mypic.src="contact.png"
+    	}
+    	function spons(){
+    		mypic.src="spons.png"
+    	}
+    	function lectures(){
+    		mypic.src="lectures.png"
+    	}
+    	function reset(){
+    		mypic.src="logo.png"
+    	}
+    </script>
+</body>
+</html>
